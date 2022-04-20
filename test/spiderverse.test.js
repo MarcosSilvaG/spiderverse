@@ -1,14 +1,19 @@
-const Spiderman = require('./../app/spiderman')
+const Spiderman = require("./../app/spiderman")
 
 describe("Unit test for Spiderman Class", () => {
 	test("1) Creating an Spiderman object", () => {
+		const andrewGarfield = new Spiderman(
+			"Spiderman Sony",
+			31,
+			"Andrew Garfield",
+			2,
+			"Sony"
+		)
 
-        const andrewGarfield = new Spiderman("Spiderman Sony", 31, "Andrew Garfield", 2, "Sony")
-
-        expect(andrewGarfield.name).toBe("Spiderman Sony")
-        expect(andrewGarfield.age).toBe(31)
-        expect(andrewGarfield.actor).toBe("Andrew Garfield")
-        expect(andrewGarfield.movies).toBe(2)
-        expect(andrewGarfield.studio).toBe("Sony")
-    })
+		expect(andrewGarfield.name).toBe("Spiderman Sony")
+		expect(andrewGarfield.age).toBe(31)
+		expect(andrewGarfield.actor).toBe("Andrew Garfield")
+		expect(andrewGarfield.movies).toBe(2)
+		expect(andrewGarfield.studio).toBe("Sony")
+	})
 })
